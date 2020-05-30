@@ -4,13 +4,7 @@ from time import sleep
 
 def main():
     def cowsay(som):   
-        s = f"""
- ______________
-(              )
-(     {som}    )
-(              )
- --------------
-        """
+        s = " " + (len(som) + 2) * "_" + " \n" + "(" + (len(som) + 2) * " " + ")\n" + "( " + som + " )\n" + "(" + (len(som) + 2) * " " + ")\n" + " " + (len(som) + 2) * "-"
         print(s)
     cowsay(input())
     sleep(2.5)
